@@ -165,8 +165,10 @@ function dailyGoalCalculator(milesRunAlready, daysLeftInMonth) {
   let unroundedResult = (50 - milesRunAlready) / daysAvailableToRun;
   return Math.round(unroundedResult * 100) / 100;
 }
+
 console.log("\n13. Result of my personal running calculator function:");
-let dailyGoal = dailyGoalCalculator(20, 16);
+let dailyGoal = dailyGoalCalculator(8, 25);
+
 console.log(
   "You must run at least " +
     dailyGoal +
